@@ -1,5 +1,7 @@
 package com.test.api.model;
 
+import java.math.BigInteger;
+
 import org.springframework.data.annotation.Id;
 
 /*
@@ -8,14 +10,14 @@ import org.springframework.data.annotation.Id;
 public class Book {
 
 	@Id
-	private int id;
+	private BigInteger id; 
 	private String name;
 	
 	
-	public int getId() {
+	public BigInteger getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(BigInteger id) {
 		this.id = id;
 	}
 	public String getName() {
